@@ -1,0 +1,8 @@
+/hik_camera_node:
+  ros__parameters:
+    exposure_time: 8000.0
+    gain: 5.0
+    frame_rate: 200.0
+    pixel_format: "Mono8"
+    width: 640
+    height: 480
