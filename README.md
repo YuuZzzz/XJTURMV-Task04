@@ -1,6 +1,6 @@
 # ROS2 Driver for Hikvision MVS Cameras
 
-这是一个为海康威视工业相机（基于MVS SDK）开发的ROS2 Humble功能包。它旨在提供一个稳定、易于使用的接口，用于在ROS2项目中获取图像并控制相机参数。
+这是XJTURMV-Task04的任务结果，为了方便观看，已经将.zip文件中内容逐一放到main中，若要下载到本地，可以直接下载.zip文件，里面包含了本次任务的全部成果。
 
 ## 核心功能
 
@@ -13,25 +13,7 @@
 
 *   Ubuntu 22.04
 *   ROS2 Humble Hawksbill
-*   海康 MVS SDK (请从[海康机器人官网](https://www.hikrobotics.com/cn/machine-vision/service/download)下载适用于Linux的版本)
-
-## 安装与编译
-
-1.  **安装 MVS SDK**:
-    请按照官方指引安装 MVS SDK。确保头文件和库文件位于 `/opt/MVS/` 目录下。
-
-2.  **克隆并编译本功能包**:
-    ```bash
-    # 进入你的 ROS2 工作空间 src 目录
-    cd ~/ros2_ws/src
-
-    # 克隆本仓库 (未来你需要替换成你的 Git 仓库地址)
-    git clone [你的Git仓库地址]
-
-    # 回到工作空间根目录并编译
-    cd ~/ros2_ws
-    colcon build --packages-select hik_camera_ros2
-    ```
+*   海康 MVS SDK
 
 ## 如何使用
 
@@ -45,7 +27,7 @@
     ```
 
 2.  **通过 Launch 文件启动**:
-    这是推荐的启动方式，它会自动加载默认参数。
+    可以启动所有节点，包括Rviz2。
     ```bash
     ros2 launch hik_camera_ros2 hik_camera.launch.py
     ```
@@ -66,14 +48,14 @@
 
 ### 可配置的参数
 
-你可以通过 `ros2 param set` 命令或在 `config/params.yaml` 文件中修改以下参数：
+可以通过 `ros2 param set` 命令或在 `config/params.yaml` 文件中修改以下参数：
 
 | 参数名 | 类型 | 默认值 | 描述 |
 |---|---|---|---|
 | `exposure_time` | double | 8000.0 | 曝光时间，单位为微秒 (us)。 |
 | `gain` | double | 5.0 | 增益值。 |
-| `frame_rate` | double | 30.0 | 目标采集帧率 (fps)。 |
-| `pixel_format` | string | "BGR8" | 像素格式。支持 "Mono8", "BGR8"。|
+| `frame_rate` | double | 200.0 | 目标采集帧率 (fps)。 |
+| `pixel_format` | string | "Mono8" | 像素格式。支持 "Mono8", "BGR8"。|
 
 ---
-**作者**: [yuu from XJTU]
+**作者**: [yuu / XJTU]
