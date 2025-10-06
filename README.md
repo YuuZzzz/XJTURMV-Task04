@@ -32,10 +32,10 @@
     ros2 launch hik_camera_ros2 hik_camera.launch.py
     ```
 
-3.  **验证**:
-    打开另一个准备好环境的终端，运行 Rviz2 并添加 `/image_raw` 话题进行查看。
+3.  **读取实际帧率**:
+    打开另一个准备好环境的终端，可以读取当前实际帧率。
     ```bash
-    rviz2
+    ros2 topic hz  /image_raw
     ```
 
 ## 接口说明
@@ -58,4 +58,4 @@
 | `pixel_format` | string | "Mono8" | 像素格式。支持 "Mono8", "BGR8"。|
 
 ---
-**作者**: [yuu / XJTU]
+**作者**: yuu from XJTU
