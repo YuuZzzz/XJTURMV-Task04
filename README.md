@@ -1,6 +1,6 @@
 # ROS2 Driver for Hikvision MVS Cameras
 
-这是XJTURMV-Task04的任务结果，为了方便观看，已经将.zip文件中内容逐一放到main中，若要下载到本地，可以直接下载.zip文件，里面包含了本次任务的全部成果。
+这是XJTURMV-Task04的任务结果，已经通过了线下验收环节。为了方便观看，已经将.zip文件中内容逐一放到main中，若要下载到本地，可以直接下载.zip文件，里面包含了本次任务的全部成果。
 
 ## 核心功能
 
