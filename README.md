@@ -35,7 +35,7 @@
 3.  **读取实际帧率**:
     打开另一个准备好环境的终端，可以读取当前实际帧率。
     ```bash
-    ros2 topic hz  /image_raw
+    ros2 topic hz /image_raw
     ```
 
 ## 接口说明
